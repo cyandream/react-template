@@ -1,9 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import Picker from './components/Picker';
 import App from './App';
 import './index.css';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
+render(
+  <App />,document.getElementById('root'),
+  <Picker/>, docuement.getElementById('main')
 );
